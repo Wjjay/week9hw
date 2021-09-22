@@ -51,7 +51,12 @@
                             "key": "Country Name",
                             "fields": ["2014"]
                         }
+                    },
+                    {
+                        "calculate": "Math.round(datum.2014, 3)",
+                        "as": "emissionRounded"
                     }
+                    
                 ],
                 
                 "mark": {
@@ -71,7 +76,7 @@
                             "title": "Country"
                         },
                         {
-                            "field": "2014",
+                            "field": "emissionRounded",
                             "type": "quantitative",
                             "title": "CO2 Emissions (metric tonnes)"
                         }
