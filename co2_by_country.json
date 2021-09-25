@@ -75,7 +75,8 @@
                         {
                             "field": "2014",
                             "type": "quantitative",
-                            "title": "CO2 Emissions (metric tonnes)"
+                            "title": "CO2 Emissions (metric tonnes)",
+                            "format": ".3f"
                         }
                     ]
                 }
