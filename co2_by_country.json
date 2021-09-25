@@ -8,7 +8,7 @@
         {
             "transform": [
                 {
-                    "calculate": "'No data'",
+                    "calculate": "'No value'",
                     "as": "emission"
                 }
             ],
@@ -19,6 +19,7 @@
                     "feature": "world_map"}
             },
             "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"},
+
             "encoding":{
                 "tooltip": [
                     {
@@ -27,9 +28,8 @@
                         "title": "Country"
                     },
                     {
-                        "field": "emission",
-                        "title": "CO2 Emissions (metric tonnes)"
-                        
+                        "title": "CO2 Emissions (metric tonnes)",
+                        "field": "emission"
                     }
                 ]
             }
@@ -43,7 +43,8 @@
                     "type": "topojson",
                     "feature": "world_map"}
                 },
-                "transform": [                    
+                "transform": [
+                    
                     {
                         "lookup": "properties.name",
                         "from": {
@@ -64,7 +65,8 @@
                 "encoding": {
                     "color":{
                         "field": "2014",
-                        "type": "quantitative"
+                        "type": "quantitative",
+                        "title": "Emission per captia"
                     },
                     "tooltip": [
                         {
@@ -73,10 +75,9 @@
                             "title": "Country"
                         },
                         {
-                            "field": "CO2 Emission per capita",
+                            "field": "2014",
                             "type": "quantitative",
-                            "title": "CO2 Emissions (metric tonnes)",
-                            "format": ".3f"
+                            "title": "CO2 Emissions (metric tonnes)"
                         }
                     ]
                 }
