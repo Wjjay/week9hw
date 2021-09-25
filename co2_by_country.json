@@ -68,7 +68,7 @@
                     
                 "encoding": {
                     "color":{
-                        "field": "CO2 Emission per capita",
+                        "field": "2014",
                         "type": "quantitative"
                     },
                     "tooltip": [
