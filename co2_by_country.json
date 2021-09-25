@@ -27,7 +27,7 @@
                         "title": "Country"
                     },
                     {
-                        "field" "emission",
+                        "field": "emission",
                         "title": "CO2 Emissions (metric tonnes)"
                         
                     }
