@@ -56,7 +56,7 @@
                                 "url": "https://raw.githubusercontent.com/Wjjay/week9hw/main/data/API_EN.ATM.CO2E.PC_DS2_en_csv_v2_10576797.csv"
                             },
                             "key": "Country Name",
-                            "fields": ["CO2 Emission per capita"]
+                            "fields": ["2014"]
                         }
                     }
                 ],
