@@ -6,6 +6,12 @@
     "projection": {"type": "equalEarth"},
     "layer": [
         {
+            "transform": [
+                {
+                    "calculate": "'No data'",
+                    "as": "emission"
+                }
+            ],
             "data": {
                 "url": "https://raw.githubusercontent.com/Wjjay/week9hw/main/data/world_map_topo.json",
                 "format": { 
@@ -13,11 +19,6 @@
                     "feature": "world_map"}
             },
             "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"},
-            "encoding": {
-              "tooltip": {
-                "field": "properties.name"
-              }
-            },
             "encoding":{
                 "tooltip": [
                     {
@@ -26,6 +27,7 @@
                         "title": "Country"
                     },
                     {
+                        "field" "emission",
                         "title": "CO2 Emissions (metric tonnes)"
                         
                     }
