@@ -45,13 +45,17 @@
                 },
                 "transform": [
                     {
+                        "calculate": "datum.2014",
+                        "as": "CO2 Emission per capita"
+                    }
+                    {
                         "lookup": "properties.name",
                         "from": {
                             "data": {
                                 "url": "https://raw.githubusercontent.com/Wjjay/week9hw/main/data/API_EN.ATM.CO2E.PC_DS2_en_csv_v2_10576797.csv"
                             },
                             "key": "Country Name",
-                            "fields": ["2014"]
+                            "fields": ["CO2 Emission per capita"]
                         }
                     }
                 ],
@@ -63,9 +67,8 @@
                     
                 "encoding": {
                     "color":{
-                        "field": "2014",
-                        "type": "quantitative",
-                        "legend": {"labelExpr": "{'2014': 'CO2 Emission per capita'}[datum.label]"}
+                        "field": "CO2 Emission per capita",
+                        "type": "quantitative"
                     },
                     "tooltip": [
                         {
@@ -74,7 +77,7 @@
                             "title": "Country"
                         },
                         {
-                            "field": "2014",
+                            "field": "CO2 Emission per capita",
                             "type": "quantitative",
                             "title": "CO2 Emissions (metric tonnes)",
                             "format": ".3f"
