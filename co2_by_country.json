@@ -64,7 +64,8 @@
                 "encoding": {
                     "color":{
                         "field": "2014",
-                        "type": "quantitative"
+                        "type": "quantitative",
+                        "legend": {"labelExpr": "{'2014': 'CO2 Emission per capita'}[datum.label]"}
                     },
                     "tooltip": [
                         {
