@@ -47,7 +47,8 @@
                     {
                         "calculate": "datum.2014",
                         "as": "CO2 Emission per capita"
-                    }
+                    },
+                    
                     {
                         "lookup": "properties.name",
                         "from": {
